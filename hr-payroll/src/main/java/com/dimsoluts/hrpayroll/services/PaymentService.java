@@ -11,19 +11,6 @@ import com.dimsoluts.hrpayroll.feignclients.WorkerFeignClient;
 @Service
 public class PaymentService {
 	
-	/*
-	@Value("${hr-worker.host}")
-	private String workerHost;
-	
-	@Autowired
-	private RestTemplate restTemplate;
-	
-	Map<String, String> uriVariables = new HashMap<>();
-		uriVariables.put("id", ""+workerId);
-		
-		Worker worker = restTemplate.getForObject(workerHost+"/workers/{id}", Worker.class, uriVariables);
-		
-	*/
 	
 	@Autowired
 	private WorkerFeignClient workerFeignClient;
